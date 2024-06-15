@@ -5,7 +5,7 @@ Welcome to my journey of learning JavaScript! This repository is dedicated to do
 ## Repository Structure
 
 - `00-Introduction`: Basic concepts and environment setup. This section includes my initial notes and exercises on getting started with JavaScript.
-- `01-Basic-Syntax`: Fundamentals of JavaScript syntax. Here, I will be exploring the basic building blocks of JavaScript.
+- `01-Lessons`: Fundamentals of JavaScript syntax. Here, I will be exploring the basic building blocks of JavaScript from the hand of a videotutorial .
 - `02-DOM-Manipulation`: Working with the Document Object Model (DOM). This section will delve into manipulating web pages with JavaScript.
 - `03-Advanced-JS`: Advanced JavaScript topics, including ES6 features, asynchronous programming, and JavaScript frameworks.
 - `04-Projects`: Practical projects to apply what I've learned. As I complete more projects, I will add them here to showcase my skills.

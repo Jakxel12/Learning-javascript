@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>6c</title>
+</head>
+<body>
+  
+  <input type="text" id="hourInput" placeholder="hour" >
+  <p></p>
+  <input type="text" id="name" placeholder="Username">
+  <p></p>
+  <button onclick="setHour()">set</button>
+
+  <script>
+    function setHour() {
+      let hourInput = document.getElementById('hourInput').value;
+      let name = document.getElementById('name').value;
+      let hour = parseInt(hourInput);
+
+
+      if (hour > 1 && hour <= 24) {
+        if (hour >= 6 && hour <= 12) {
+          console.log(`Good morning ${name}!`);
+        } else if (hour >= 13 && hour <= 17) {
+          console.log(`Good afternoon ${name}!`);
+        } else {
+          console.log(`Good night ${name}!`);
+        }
+      } else {
+        console.log('time invalid');
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>6a</title>
+</head>
+<body>
+
+  <input type="text" id="hourInput" placeholder="hour">
+  <button onclick="setHour()">set hour</button>
+
+  <script>
+    function setHour() {
+      let hourInput = document.getElementById('hourInput').value;
+      let hour = parseInt(hourInput);
+
+      if (hour > 1 && hour <= 24) {
+        if (hour >= 6 && hour <= 12) {
+          console.log('Good morning');
+        } else if (hour >= 13 && hour <= 17) {
+          console.log('Good afternoon');
+        } else {
+          console.log('Good night!');
+        }
+      } else {
+        console.log('time invalid');
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+// different messages from different values

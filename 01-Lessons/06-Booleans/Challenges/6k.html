@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>6k</title>
+  </head>
+  <body>
+    <button onclick="
+    if (cartQuantity <=9) {
+        cartQuantity ++;
+        console.log('added to cart');
+        console.log(`cartQuantity: ${cartQuantity}`);
+      } else {
+        alert('The cart is full')
+      }">
+      Add to cart
+    </button>
+
+    <script>
+      let cartQuantity = 0;
+    </script>
+  </body>
+</html>

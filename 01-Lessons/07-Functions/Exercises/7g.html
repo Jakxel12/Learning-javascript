@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ConvertLength</title>
+</head>
+<body>
+  <button onclick="convertLenght(50, 'miles', 'ft')">convert</button>
+    <script>
+    let result = 0;
+      function convertLenght(lenght, from, to) {
+        if (from === 'miles' && to === 'km') {
+          result = lenght * 1.6
+        } else if (from === 'miles' && to === 'ft') {
+          result = lenght * 3281
+        }
+        console.log(result);
+      }
+    </script>
+</body>
+</html>

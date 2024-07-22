@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 8e</title>
+</head>
+<body>
+
+  <script>
+    /*
+    Create a function 'isSameProduct(product, product2)', which returns
+    true if 2 products have the same values inside ('name' and 'price').
+    If not, return false. Create 2 products and try out the function.
+    (Hint: objects are references so you can't compare them directly).
+    */
+
+    //Creation of the products
+    const product1 = {
+      name: 'red',
+      price: 14
+    }
+    const product2 = {
+      name: 'red',
+      price: 14
+    }
+
+    // Function of comparation 
+    function isSameProduct(product1, product2) {
+      return product1.name === product2.name && product1.price === product2.price;
+    }
+
+    // log the result
+    console.log(isSameProduct(product1,product2))
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 8d</title>
+</head>
+<body>
+
+  <script>
+    // Define the two product objects
+    const product1 = {
+      name: 'red',
+      price: 1000
+    };
+
+    const product2 = {
+      name: 'blue',
+      price: 2000
+    };
+
+    // Define the comparePrice function
+    function comparePrice(product1, product2) {
+      return product1.price < product2.price ? product1 : product2;
+    }
+
+    // Call the comparePrice function with the two products
+    const lessExpensiveProduct = comparePrice(product1, product2);
+
+    // Log the result
+    console.log(lessExpensiveProduct);
+  </script>
+</body>
+</html>

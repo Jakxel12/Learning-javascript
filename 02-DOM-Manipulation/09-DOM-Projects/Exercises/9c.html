@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise-9c</title>
+</head>
+<body>
+  <button class="btn-Heads">Teads</button>
+  <button class="btn-Tails">Tails</button>
+  <p class="text">You chose:</p>
+
+  <script>
+    document.querySelector('.btn-Heads').addEventListener('click', () => Chose('tails'));
+    document.querySelector('.btn-Tails').addEventListener('click', () => Chose('heads'));
+
+    function Chose(guess) {
+      const text = document.querySelector('.text');
+      text.innerText = `You chose: ${guess}`;
+      
+      setTimeout(() => {
+        text.innerText = 'You chose:';
+      }, 1000);
+    }
+  </script>
+</body>
+</html>

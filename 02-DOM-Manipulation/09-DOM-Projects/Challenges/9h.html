@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise-9h</title>
+  </head>
+  <body>
+
+    <input type="text" class="js-input">
+    <p class="js-text">text</p>
+    <script>
+
+      document.querySelector('.js-input').addEventListener('keyup',changeText);
+
+      function changeText() {
+        const text = document.querySelector('.js-input').value;
+        document.querySelector('.js-text').innerText = text;
+      }
+    </script>
+  </body>
+</html>

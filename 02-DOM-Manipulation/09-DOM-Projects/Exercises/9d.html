@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise-9d</title>
+  </head>
+  <body>
+    <input  placeholder="Insert name" class="inputName" onkeydown="handleCostKeydown(event)">
+    <button class="btnSubmit">Submit</button>
+    <p class="text">Your name is:</p>
+    <script>
+
+    document.querySelector('.btnSubmit').addEventListener('click', () => getName())
+    document.querySelector('.btnSubmit').addEventListener('onkeydown', () => getName())
+
+    
+    function getName() {
+      const name = document.querySelector('.inputName').value
+      document.querySelector('.text').innerHTML = `Your name is: ${name}`;
+    }
+
+    function handleCostKeydown(event) {
+        if (event.key === 'Enter') {
+          getName();
+        }
+      }
+    
+    </script>
+  </body>
+</html>

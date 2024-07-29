@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Challenge-11n</title>
+  </head>
+  <body>
+
+    <script>
+      function countWords(words) {
+        let wordsCount = {};
+        for (let i = 0; i < words.length; i++) {
+          if (wordsCount[words[i]]) {
+            wordsCount[words[i]]++;
+          } else {
+            wordsCount[words[i]] = 1;
+          }
+        }
+        return wordsCount;
+      }
+      console.log(countWords(['apple', 'grape', 'apple', 'banana']));
+    </script>
+
+  </body>
+</html>

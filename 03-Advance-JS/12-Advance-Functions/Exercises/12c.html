@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <title>11c Exercise</title>
+</head>
+<body>
+  <button onclick="change()" class="Button1">
+    Star
+  </button>
+  <script>
+    function change() {
+      const button = document.querySelector('.Button1');
+      setTimeout(
+        function () {
+          button.innerHTML = 'Finished!';
+        }, 1000);
+    }
+  </script>
+</body>
+</html>

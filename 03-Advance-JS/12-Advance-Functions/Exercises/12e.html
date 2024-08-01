@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+  <title>11e Exercise</title>
+</head>
+<body>
+  <div class="display">
+    <button onclick="add()" class="button-add">
+        Add to cart
+    </button>
+  </div>
+  
+  <script>
+    function add() {
+      const display1  = document.querySelector('.display')
+      display1.innerHTML += '<div id="text-1">Added</div>';
+      const element = document.getElementById('text-1');
+         setTimeout(function() {    
+        element.remove();
+      }, 1000)
+    }
+  </script>
+</body>
+</html>

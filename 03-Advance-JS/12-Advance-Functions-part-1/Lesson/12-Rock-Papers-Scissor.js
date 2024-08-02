@@ -86,10 +86,7 @@ function pickComputerMove() {
   } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
     computerMove = 'scissors';
   }
-
-  return computerMove;
-
-  
+  return computerMove;  
 }
 
 let isAutoPlaying = false;
